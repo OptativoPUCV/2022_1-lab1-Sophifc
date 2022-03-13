@@ -34,3 +34,14 @@ exercises.c:80:11: error: return from incompatible pointer type [-Werror=incompa
 cc1: all warnings being treated as errors
 Compilation failed
 bb32647
+Sun Mar 13 12:40:29 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:80:11: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+    return vector;
+           ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c074b69
