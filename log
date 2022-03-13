@@ -204,3 +204,23 @@ exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘Vector *
 cc1: all warnings being treated as errors
 Compilation failed
 474c803
+Sun Mar 13 12:53:51 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:123:14: error: passing argument 3 of ‘suma’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   suma(a1,b1,&c[0]);
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘Vector * {aka struct <anonymous> *}’
+ void suma(int a, int b, int * c) {
+      ^~~~
+exercises.c:124:14: error: passing argument 3 of ‘suma’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   suma(a2,b2,&c[1]);
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘Vector * {aka struct <anonymous> *}’
+ void suma(int a, int b, int * c) {
+      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e1b6196
