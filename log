@@ -338,3 +338,23 @@ exercises.c:126:14: error: invalid type argument of unary ‘*’ (have ‘int�
               ^~~~~~~~~~~~
 Compilation failed
 456b669
+Sun Mar 13 12:58:55 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:125:14: error: passing argument 3 of ‘suma’ makes pointer from integer without a cast [-Werror=int-conversion]
+   suma(a1,b1,(c->datos[0]));
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘int’
+ void suma(int a, int b, int * c) {
+      ^~~~
+exercises.c:126:14: error: passing argument 3 of ‘suma’ makes pointer from integer without a cast [-Werror=int-conversion]
+   suma(a2,b2,(c->datos[1]));
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘int’
+ void suma(int a, int b, int * c) {
+      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+19cf8c7
