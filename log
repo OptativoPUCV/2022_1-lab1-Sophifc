@@ -81,3 +81,13 @@ exercises.c:91:3: error: ‘vector’ undeclared (first use in this function); d
 exercises.c:91:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d8723b5
+Sun Mar 13 12:44:44 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘asignarValor’:
+exercises.c:91:7: error: incompatible types when assigning to type ‘Vector {aka struct <anonymous>}’ from type ‘int’
+   v[i]=valor;
+       ^
+Compilation failed
+0a62c6f
