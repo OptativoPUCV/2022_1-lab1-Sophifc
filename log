@@ -97,3 +97,24 @@ Sun Mar 13 12:45:52 UTC 2022:
  tests:  4|3
 total_score: 40/70
 228a6d4
+Sun Mar 13 12:47:10 UTC 2022: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:101:3: error: unknown type name ‘retur’; did you mean ‘Vector’?
+   retur aux;
+   ^~~~~
+   Vector
+exercises.c:101:9: error: redeclaration of ‘aux’ with no linkage
+   retur aux;
+         ^~~
+exercises.c:100:7: note: previous definition of ‘aux’ was here
+   int aux=(v->datos[i]);
+       ^~~
+exercises.c:101:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+   retur aux;
+         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+b7323a8
