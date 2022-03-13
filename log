@@ -91,3 +91,9 @@ exercises.c:91:7: error: incompatible types when assigning to type ‘Vector {ak
        ^
 Compilation failed
 0a62c6f
+Sun Mar 13 12:45:52 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+228a6d4
