@@ -256,3 +256,22 @@ exercises.c:124:14: error: invalid type argument of unary ‘*’ (have ‘Vecto
               ^~~~~
 Compilation failed
 b803d1a
+Sun Mar 13 12:54:48 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:123:14: error: incompatible type for argument 3 of ‘suma’
+   suma(a1,b1,*c);
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘Vector {aka struct <anonymous>}’
+ void suma(int a, int b, int * c) {
+      ^~~~
+exercises.c:124:14: error: incompatible type for argument 3 of ‘suma’
+   suma(a2,b2,*c);
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘Vector {aka struct <anonymous>}’
+ void suma(int a, int b, int * c) {
+      ^~~~
+Compilation failed
+01223c7
