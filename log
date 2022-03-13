@@ -124,3 +124,25 @@ Sun Mar 13 12:47:23 UTC 2022:
  tests:  6|2
 total_score: 50/70
 e6b5f93
+Sun Mar 13 12:49:18 UTC 2022: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV’:
+exercises.c:112:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   for(int i=0, i<largo,i++){
+                 ^
+exercises.c:115:1: error: expected expression before ‘}’ token
+ }
+ ^
+exercises.c:115:1: error: expected expression before ‘}’ token
+exercises.c:115:1: error: expected expression before ‘}’ token
+exercises.c:112:11: error: unused variable ‘i’ [-Werror=unused-variable]
+   for(int i=0, i<largo,i++){
+           ^
+exercises.c:111:7: error: unused variable ‘largo’ [-Werror=unused-variable]
+   int largo=a->capacidad;
+       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d68a813
