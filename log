@@ -300,3 +300,28 @@ Sun Mar 13 12:57:23 UTC 2022:
  tests:  8|0
 total_score: 70/70
 1566dad
+Sun Mar 13 12:58:09 UTC 2022: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:125:14: error: passing argument 3 of ‘suma’ makes pointer from integer without a cast [-Werror=int-conversion]
+   suma(a1,b1,c->datos[0]);
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘int’
+ void suma(int a, int b, int * c) {
+      ^~~~
+exercises.c:126:8: error: ‘a3’ undeclared (first use in this function); did you mean ‘a2’?
+   suma(a3,b2,c->datos[1]);
+        ^~
+        a2
+exercises.c:126:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:126:14: error: passing argument 3 of ‘suma’ makes pointer from integer without a cast [-Werror=int-conversion]
+   suma(a3,b2,c->datos[1]);
+              ^
+exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘int’
+ void suma(int a, int b, int * c) {
+      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+31d4f33
