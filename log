@@ -275,3 +275,16 @@ exercises.c:14:6: note: expected ‘int *’ but argument is of type ‘Vector {
       ^~~~
 Compilation failed
 01223c7
+Sun Mar 13 12:56:05 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:123:3: error: invalid type argument of unary ‘*’ (have ‘Vector {aka struct <anonymous>}’)
+   *c[0]=a1+a2;
+   ^~~~~
+exercises.c:124:3: error: invalid type argument of unary ‘*’ (have ‘Vector {aka struct <anonymous>}’)
+   *c[1]=b1+b2;
+   ^~~~~
+Compilation failed
+c2392fe
