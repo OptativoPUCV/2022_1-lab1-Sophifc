@@ -69,3 +69,15 @@ exercises.c:91:4: error: ‘vector’ undeclared (first use in this function); d
 exercises.c:91:4: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 3593bb9
+Sun Mar 13 12:44:32 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘asignarValor’:
+exercises.c:91:3: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   vector[i]=valor;
+   ^~~~~~
+   Vector
+exercises.c:91:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d8723b5
