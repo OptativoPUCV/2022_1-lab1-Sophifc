@@ -152,3 +152,16 @@ Sun Mar 13 12:49:40 UTC 2022:
  tests:  7|1
 total_score: 60/70
 338e358
+Sun Mar 13 12:52:53 UTC 2022: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:123:14: error: invalid type argument of unary ‘*’ (have ‘Vector {aka struct <anonymous>}’)
+   suma(a1,b1,*c[0]);
+              ^~~~~
+exercises.c:124:14: error: invalid type argument of unary ‘*’ (have ‘Vector {aka struct <anonymous>}’)
+   suma(a2,b2,*c[1]);
+              ^~~~~
+Compilation failed
+08c4ef9
