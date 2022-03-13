@@ -45,3 +45,9 @@ exercises.c:80:11: error: return from incompatible pointer type [-Werror=incompa
 cc1: all warnings being treated as errors
 Compilation failed
 c074b69
+Sun Mar 13 12:40:55 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+1d2b36c
